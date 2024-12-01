@@ -19,6 +19,8 @@ export async function addProduct(data: ProductData) {
                 name: result.output.name,
                 price: result.output.price
             })
+            console.log(data)
+            
         } else {
             throw new Error("Data are not valid!")
         }
