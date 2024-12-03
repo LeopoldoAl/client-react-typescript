@@ -63,3 +63,9 @@ export async function getProductById(id : Product['id']) {
         
     }
 }
+
+export async function updateProduct(data: ProductData, id: Product['id']) {
+    console.log(data)
+    console.log(id)
+    
+}
