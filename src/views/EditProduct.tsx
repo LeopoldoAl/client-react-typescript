@@ -1,9 +1,16 @@
 import { ActionFunctionArgs, Form, Link, LoaderFunctionArgs, redirect, useActionData, useLocation } from "react-router-dom"
 import ErrorMessage from "../components/ErrorMessage"
-import { addProduct } from "../services/ProductService"
+import { addProduct, getProductById } from "../services/ProductService"
 
 export async function loader({params}: LoaderFunctionArgs) {
-  console.log(params.id)
+  if (params.id!==undefined) {
+    const product = await getProductById(+params.id)
+    if (!product) {
+      throw new Response("", { status: 404, statusText: 'Not Found!'})
+    }
+    
+  }
+  
   return {}
 }
 export async function action({request} : ActionFunctionArgs) {
