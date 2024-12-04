@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { ActionFunctionArgs, Form, redirect, useNavigate } from "react-router-dom"
 import { Product } from "../types"
 import { formatCurrency } from "../utils"
 
@@ -6,6 +6,11 @@ type ProductDetailsProps = {
     product: Product
 }
 
+export async function action({params} : ActionFunctionArgs) {
+    console.log(params.id)
+
+    return redirect('/')
+}
 export default function ProductDetails({product}: ProductDetailsProps) {
     const navigate = useNavigate()
     const isAvailable = product.availability
@@ -28,6 +33,18 @@ export default function ProductDetails({product}: ProductDetailsProps) {
                 >
                     Edit
                 </button>
+
+                <Form
+                    className="w-full"
+                    method="POST"
+                    action={`products/${product.id}/delete`}
+                >
+                    <input 
+                        type="submit" 
+                        value={"Delete"}
+                        className="bg-red-600 text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center"
+                    />
+                </Form>
             </div>
         </td>
     </tr> 
