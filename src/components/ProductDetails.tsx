@@ -25,7 +25,16 @@ export default function ProductDetails({product}: ProductDetailsProps) {
             {formatCurrency(product.price)}
         </td>
         <td className="p-3 text-lg text-gray-800">
-        {isAvailable ? 'Available': 'No available'}
+            <form method="POST">
+                <button
+                    type="button"
+                    name="availability"
+                    value={product.availability.toString()}
+                    className={`${product.availability ? 'text-black' : 'text-red-600'} rounded-lg p-2 text-xs uppercase font-bold w-full border border-black-100 hover:cursor-pointer`}
+                >
+                    {isAvailable ? 'Available': 'No available'}
+                </button>
+            </form>
         </td>
         <td className="p-3 text-lg text-gray-800 ">
             <div className="flex gap-2 items-center">
