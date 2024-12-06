@@ -1,4 +1,4 @@
-# REST API NODE TS SERVER
+# Client React Typescript
 ## Description
 
 This project worked in connection to a REST API, from where it fetches data what show in an interface that has been created with React. It allows to the users display products and can do manipulation, such as adding, updating and deleting.
