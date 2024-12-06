@@ -24,7 +24,7 @@ This project worked in connection to a REST API, from where it fetches data what
 - typescript-eslint
 - vite
 
-This project was built using Vite, React and Typescript technologies. And the commands used for running this this application in dev mode is:
+This project was built using Vite, React and Typescript technologies. And the commands used for running this application in dev mode is:
 ```
 npm run dev
 ```
