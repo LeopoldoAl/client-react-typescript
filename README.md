@@ -1,3 +1,39 @@
+# REST API NODE TS SERVER
+## Description
+
+This project worked in connection to a REST API, from where it fetches data what show in an interface that has been created with React. It allows to the users display products and can do manipulation, such as adding, updating and deleting.
+
+### In this project, we worked with dependencies such as:
+* axios
+* react
+* react-dom
+* react-router-dom
+* valibot
+### Also we worked with development depenncies such as:
+- @eslint/js
+- @types/react
+- @types/react-dom
+- @vitejs/plugin-react-swc
+- eslint
+- eslint-plugin-react-hooks
+- eslint-plugin-react-refresh
+- globals
+- postcss
+- tailwindcss
+- typescript
+- typescript-eslint
+- vite
+
+This project was built using Vite, React and Typescript technologies. And the commands used for running this this application in dev mode is:
+```
+npm run dev
+```
+
+While to compile this project, we use this:
+```
+npm run build
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
