@@ -2,7 +2,18 @@
 ## Description
 
 This project worked in connection to a REST API, from where it fetches data what show in an interface that has been created with React. It allows to the users display products and can do manipulation, such as adding, updating and deleting.
+## The following screenshots display how this app works:
 
+* Getting products from the server
+![Getting products from the server](../media/client1.png)
+* Adding products to the server
+![Adding products to the server](../media/adding.png)
+* Editting products to the server
+![Editting products to the server](../media/editing.png)
+* Updating products to the server
+![Updating products to the server](../media/updating.png)
+* Deleting products to the server
+![Deleting products to the server](../media/deleting.png)
 ### In this project, we worked with dependencies such as:
 * axios
 * react
