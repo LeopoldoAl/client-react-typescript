@@ -5,13 +5,13 @@ This project worked in connection to a REST API, from where it fetches data what
 ## The following screenshots display how this app works:
 
 * Getting products from the server
-![Getting products from the server](../media/client1.png)
+![Getting products from the server](../media/client1.png?raw=true)
 * Adding products to the server
-![Adding products to the server](../media/adding.png)
+![Adding products to the server](../media/adding.png?raw=true)
 * Editting products to the server
-![Editting products to the server](../media/editing.png)
-* Updating products to the server
-![Updating products to the server](../media/updating.png)
+![Editting products to the server](../media/editing.png?raw=true)
+* Updating product availability to the server
+![Updating products to the server](../media/updating.png?raw=true)
 * Deleting products to the server
 ![Deleting products to the server](../media/deleting.png)
 ### In this project, we worked with dependencies such as:
