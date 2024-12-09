@@ -48,7 +48,7 @@ Installation command:
 ```
 npm install
 ```
-Something very important are the environment variables, the environment variables used by this project are the following:
+Something very important are the environment variables, the environment variable used by this project is the following:
 - **VITE_API_URL**: this is the url that provides our hosting services and should be for example ```https://example.com``` or ```http://localhost:3000``` but in both cases can never be for example ~~```https://example.com/```~~ or ~~```http://localhost:3000/```~~, it means the url without '/' to the end of the url.
 
 This project was built using Vite, React and Typescript technologies. And the commands used for running this application in dev mode is:
