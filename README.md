@@ -34,6 +34,22 @@ This project worked in connection to a REST API, from where it fetches data what
 - typescript
 - typescript-eslint
 - vite
+## About the deployment
+As this project had been created using **Vite**, the most appropriately would be to use a server that works with **Vite**, these servers could be for example **[Netlify](https://www.netlify.com/)**, **[Vercel](https://vercel.com/)** and so on.
+In order to build this project, we use the next command combination:
+```
+npm install
+```
+Our output directory is:
+```
+dist
+```
+Installation command:
+```
+npm install
+```
+Something very important are the environment variables, the environment variables used by this project are the following:
+- **VITE_API_URL**: this is the url that provides our hosting services and should be for example ```https://example.com``` or ```http://localhost:3000``` but in both cases can never be for example ~~```https://example.com/```~~ or ~~```http://localhost:3000/```~~, it means the url without '/' to the end of the url.
 
 This project was built using Vite, React and Typescript technologies. And the commands used for running this application in dev mode is:
 ```
